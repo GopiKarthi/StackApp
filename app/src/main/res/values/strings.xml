@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">StackCL</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="imageview">ImageView</string>
+    <string name="delete_image">Delete ImageView</string>
+    <string name="loadmore">Loading more questions&#8230;</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_activity_oauth_login">OAuth</string>
+    <string name="drawer_item_feed">My Post</string>
+    <string name="drawer_item_stackOF">Stack Overflow</string>
+    <string name="drawer_item_stackApps">Stack Apps</string>
+    <string name="drawer_item_extra">Extras</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">help</string>
+    <string name="drawer_item_signout">Logout</string>
+
+
+
+
+
+</resources>

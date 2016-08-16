@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Qlist_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/vote_answer_LL"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:background="#B3E5FC"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="1dp"
+            android:text="New Text"
+            android:id="@+id/QuestionLink" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/upvotes_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_snackbar_background_color"
+                android:textSize="10dp"
+                android:text="150.3k"
+                android:gravity="end"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView2"
+                android:layout_toStartOf="@+id/imageView2"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:padding="5dp"
+                android:src="@drawable/upvote1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageView2" />
+        </RelativeLayout>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/answers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_snackbar_background_color"
+                android:textSize="10dp"
+                android:text="5000"
+                android:gravity="end"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imageView"
+                android:layout_toStartOf="@+id/imageView"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:padding="5dp"
+                android:src="@drawable/vote"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/imageView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#E1F5FE"
+        android:padding="5dp"
+        android:id="@+id/question_LL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#01579B"
+                android:text="Huge number of files generated for every AngularJS 2 project" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <RelativeLayout
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/question_tag"
+                    android:textColor="#F57F17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Huge number of files generated for every AngularJS 2 project"
+                    android:textStyle="bold|italic"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/question_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/design_fab_shadow_start_color"
+                    android:textSize="12dp"
+                    android:text="10 aug"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="end" />
+                <TextView
+                    android:id="@+id/userPosted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#01579B"
+                    android:textSize="12dp"
+                    android:text="Gopi Karthi"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="end" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@android:color/darker_gray"/>
+
+
+</LinearLayout>
