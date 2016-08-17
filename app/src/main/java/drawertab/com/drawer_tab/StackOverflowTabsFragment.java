@@ -32,6 +32,7 @@ ViewPager viewPager;
         tabLayout.addTab(tabLayout.newTab().setText("Month"));
 
         viewPager = (ViewPager) inflatedView.findViewById(R.id.viewpager);
+        viewPager.setOffscreenPageLimit(4);
         p = new QuestionsSortPagerAdapter(getChildFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(p);
 //        viewPager.invalidate();

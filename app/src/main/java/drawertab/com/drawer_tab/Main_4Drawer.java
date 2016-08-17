@@ -316,7 +316,7 @@ public class Main_4Drawer extends AppCompatActivity {
             @Override
             public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                 // TODO
-                Toast.makeText(getApplicationContext(), "Positive", Toast.LENGTH_LONG).show();
+//                Toast.makeText(getApplicationContext(), "Positive", Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(), OAuthLogin.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_up_out);
@@ -327,7 +327,7 @@ public class Main_4Drawer extends AppCompatActivity {
                     @Override
                     public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
                         // TODO
-                        Toast.makeText(getApplicationContext(), "onNeutral", Toast.LENGTH_LONG).show();
+//                        Toast.makeText(getApplicationContext(), "onNeutral", Toast.LENGTH_LONG).show();
                     }
                 })
                 .onNegative(new MaterialDialog.SingleButtonCallback() {

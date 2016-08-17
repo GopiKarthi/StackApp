@@ -122,8 +122,8 @@
     <orderEntry type="library" exported="" name="fastadapter-1.6.1" level="project" />
     <orderEntry type="library" exported="" name="design-24.1.1" level="project" />
     <orderEntry type="library" exported="" name="fontawesome-typeface-4.6.0.3" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-24.1.1" level="project" />
     <orderEntry type="library" exported="" name="glide-3.7.0" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-24.1.1" level="project" />
     <orderEntry type="library" exported="" name="library-aar-1.0.0" level="project" />
   </component>
 </module>
