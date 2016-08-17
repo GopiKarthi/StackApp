@@ -1,7 +1,6 @@
 package drawertab.com.drawer_tab;
 
 import android.app.Dialog;
-import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -62,7 +61,7 @@ public class Main_4Drawer extends AppCompatActivity {
     Fragment fragment3 = new StackApps();
     SharedPreferences pref;
     public static final String MyPREFERENCES = "MyPrefs" ;
-    Boolean Authenicate;
+    Boolean Authenicated;
     String Profile_URL,UserName;
     IProfile User_Profile;
     PrimaryDrawerItem logout_DrawerItem;
@@ -79,8 +78,8 @@ public class Main_4Drawer extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
-        Authenicate = pref.getBoolean("authComplete", false);
-        if(!Authenicate){
+        Authenicated = pref.getBoolean("authComplete", false);
+        if(!Authenicated){
 //            Toast.makeText(this,"Resume",Toast.LENGTH_SHORT).show();
 //            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
 //            ft.replace(R.id.frame_container, fragment2).commit();
@@ -102,8 +101,8 @@ public class Main_4Drawer extends AppCompatActivity {
         logout_DrawerItem = new PrimaryDrawerItem().withName(R.string.drawer_item_signout).withIcon(FontAwesome.Icon.faw_sign_out).withIdentifier(7).withEnabled(false);
 //        IProfile profile = new ProfileDrawerItem().withName("Guest");
 
-        Authenicate = pref.getBoolean("authComplete", false);
-        if(Authenicate){
+        Authenicated = pref.getBoolean("authComplete", false);
+        if(Authenicated){
             PostVolley_Profile(pref.getString("auth_token", null));
         }
 
@@ -160,8 +159,8 @@ public class Main_4Drawer extends AppCompatActivity {
                         if (drawerItem != null && drawerItem.getIdentifier() == 1) {
 //                            Toast.makeText(getApplicationContext(), ((Nameable) drawerItem).getName().getText(Main_4Drawer.this), Toast.LENGTH_LONG).show();
                             invalidateOptionsMenu();
-                            Authenicate = pref.getBoolean("authComplete", false);
-                            if (!Authenicate) {
+                            Authenicated = pref.getBoolean("authComplete", false);
+                            if (!Authenicated) {
                                 Call_Dialog();
                                // openDialog();
                             }
@@ -221,7 +220,7 @@ public class Main_4Drawer extends AppCompatActivity {
         this.menu = menu;
       inflater.inflate(R.menu.main, menu);
         setOptionIcon(R.id.LogInOut, R.drawable.login);
-        if(Authenicate){
+        if(Authenicated){
             setOptionIcon(R.id.LogInOut,R.drawable.logout);
         }
 
@@ -273,7 +272,7 @@ public class Main_4Drawer extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Logout Successfully", Toast.LENGTH_SHORT).show();
         SharedPreferences.Editor edit = pref.edit();
         edit.putBoolean("authComplete", false);
-        Authenicate=false;
+        Authenicated =false;
         edit.commit();
 //        Fragment f = getSupportFragmentManager().findFragmentById(R.id.frame_container);
 //        if(!f.equals(fragment2)){
