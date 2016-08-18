@@ -2,7 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight">
 
 
     <!-- Recycler View -->
@@ -20,7 +21,7 @@
     <include
         android:id="@+id/loadItemsLayout_recyclerView"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         layout="@layout/progress_layout"
         android:visibility="gone" />
